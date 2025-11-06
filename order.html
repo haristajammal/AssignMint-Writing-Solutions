@@ -1,0 +1,136 @@
+<!-- Updated order.html (Added Font Awesome if needed, floating button already present) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AssignMint Writing Solutions - Order</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="AssignMint Logo">
+                <span>AssignMint</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="order.html">Order Now</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="whatsapp-btn">
+                <a href="https://wa.me/1234567890?text=Hello%20AssignMint,%20I%20need%20help%20with%20an%20assignment." target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    Chat with us
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="order-section">
+        <h1>Place Your Order</h1>
+        <form id="order-form">
+            <label for="name">Name*</label>
+            <input type="text" id="name" required>
+            
+            <label for="phone">Phone*</label>
+            <input type="tel" id="phone" required>
+            
+            <label for="email">Email*</label>
+            <input type="email" id="email" required>
+            
+            <label for="currency">Currency*</label>
+            <select id="currency" required>
+                <option value="">Select Currency</option>
+                <option value="USD">United States of America - $ USD</option>
+                <option value="PKR">Pakistan - PKR</option>
+                <option value="CAD">Canada - $ CAD</option>
+                <option value="AUD">Australia - $ AUD</option>
+                <option value="GBP">UK - £ GBP</option>
+                <option value="SGD">Singapore - $ SGD</option>
+                <option value="AED">United Arab Emirates - د.إ AED</option>
+                <option value="SAR">Saudi Arabia - SAR</option>
+            </select>
+            
+            <label for="offered-price">Offered Price</label>
+            <input type="number" id="offered-price" step="0.01">
+            
+            <label for="subject">Subject*</label>
+            <select id="subject" required>
+                <option value="">Select Subject</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English">English</option>
+                <option value="Engineering">Engineering</option>
+                <option value="Psychology">Psychology</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Accounts">Accounts</option>
+                <option value="Finance">Finance</option>
+                <option value="Science">Science</option>
+                <option value="Humanities">Humanities</option>
+                <option value="Management">Management</option>
+                <option value="Nursing">Nursing</option>
+                <option value="Other">Other</option>
+                <option value="Arts">Arts</option>
+                <option value="Pedagogy">Pedagogy</option>
+                <option value="Astronomy">Astronomy</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Business Analytics">Business Analytics</option>
+                <option value="Chemistry">Chemistry</option>
+                <option value="Medical">Medical</option>
+                <option value="Economics">Economics</option>
+                <option value="Statistics">Statistics</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Food Technology">Food Technology</option>
+                <option value="HRM">HRM</option>
+                <option value="Literature">Literature</option>
+                <option value="Marketing">Marketing</option>
+                <option value="History">History</option>
+                <option value="Law">Law</option>
+                <option value="Project Management">Project Management</option>
+                <option value="Taxation">Taxation</option>
+                <option value="Cost Accounting">Cost Accounting</option>
+                <option value="Biology">Biology</option>
+                <option value="Communication">Communication</option>
+                <option value="Programming">Programming</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Cookery">Cookery</option>
+                <option value="Designing">Designing</option>
+            </select>
+            
+            <label for="word-count">Word Count</label>
+            <input type="number" id="word-count">
+            
+            <label for="deadline-date">Deadline Date*</label>
+            <input type="date" id="deadline-date" required>
+            
+            <label for="deadline-time">Deadline Time</label>
+            <input type="time" id="deadline-time">
+            
+            <label for="details">Details</label>
+            <textarea id="details"></textarea>
+            
+            <p>Note: Send Files on Whatsapp (if Any)</p>
+            
+            <button type="submit">Submit Order</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 AssignMint Writing Solutions. All rights reserved.</p>
+    </footer>
+
+    <div class="floating-whatsapp">
+        <a href="https://wa.me/+923045961066?text=Hello%20AssignMint,%20I%20need%20help%20with%20an%20assignment." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
